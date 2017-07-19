@@ -8,6 +8,7 @@ namespace MongoMVC.Models
     {
         public ObjectId _id { get; set; }
         [Required(ErrorMessage = "Please enter name.")]
+        [Display(Name ="Manager Name")]
         public string ManagerName { get; set; }
         [Required(ErrorMessage = "Please enter designation.")]
         public string Designation { get; set; }
